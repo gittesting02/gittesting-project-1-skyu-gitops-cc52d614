@@ -1,0 +1,49 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 200
+      memoryRequestMb: 100
+      memoryLimitMb: 200
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: mist123-main
+  minReplicas: 1
+  maxReplicas: 5
+  terminationGracePeriodSeconds: 30
+  nodeSelector:
+    kubernetes.io/hostname: my-node-name
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: rs23ff4335d
+    env: production
+    version: v0.0.1
+    applicationId: app_903fd815-63ed-4ad4-b9fd-9e3a3108feaf
+    projectId: project_b02f2e4b-f4c1-450a-ab69-21ec01685acd
+    organizationId: org_8866a8dc-875d-4215-82e6-928512b4c6ff
+    environmentId: env_284d1f50-7751-43c4-824b-d59f33a8432d
+    environmentName: dev
+  horizontalAutoScalingRules:
+    - ruleType: cpu
+      percentage: 80
+  volumes:
+    - name: my-volume
+      type: PersistentVolumeClaim
+      pvc:
+        claimName: my-claim
+  type: service
+  serviceType: LoadBalancer
+  name: mist123
+  namespace: asdasdasd-dev
