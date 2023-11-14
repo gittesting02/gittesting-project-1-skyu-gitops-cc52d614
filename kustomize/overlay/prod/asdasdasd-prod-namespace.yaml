@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: asdasdasd-prod
+  labels:
+    environment-id: env_db707f4f-c71e-4dff-9647-cb1d1c3b32af
+    project-id: project_b02f2e4b-f4c1-450a-ab69-21ec01685acd
+    project-name: gittesting-project
+    environment-name: prod
+    organization-id: org_8866a8dc-875d-4215-82e6-928512b4c6ff

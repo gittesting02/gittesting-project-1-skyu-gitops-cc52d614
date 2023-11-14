@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: asdasdasd-staging
+  labels:
+    environment-id: env_565a5082-86d0-472e-95dd-c0176e16070d
+    project-id: project_b02f2e4b-f4c1-450a-ab69-21ec01685acd
+    project-name: gittesting-project
+    environment-name: staging
+    organization-id: org_8866a8dc-875d-4215-82e6-928512b4c6ff
