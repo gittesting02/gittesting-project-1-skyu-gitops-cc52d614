@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rs2345
+  labels:
+    app: rs2345
+    applicationId: app_d69b5ee1-1edb-44a8-8d1a-1e85f961ba8b
+    version: v0.0.1
+spec:
+  selector:
+    matchLabels:
+      app: rs2345
+  template:
+    metadata:
+      labels:
+        app: rs2345
