@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rs23
+  labels:
+    app: rs23
+    applicationId: app_2a436547-0bd9-4ed0-ae46-8205a819f066
+    version: v0.0.1
+spec:
+  selector:
+    matchLabels:
+      app: rs23
+  template:
+    metadata:
+      labels:
+        app: rs23
