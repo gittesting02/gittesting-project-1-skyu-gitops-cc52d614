@@ -19,7 +19,7 @@ spec:
       applicationPorts: []
       healthChecks: []
       name: mist-main
-      imageRegistry: imageRegistryUrl
+      imageRegistry: imageRegistryUrl23
       commitDetails:
         commitHash: hash
         commitAvatar: avatar
