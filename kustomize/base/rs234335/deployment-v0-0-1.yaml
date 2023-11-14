@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rs234335
+  labels:
+    app: rs234335
+    applicationId: app_c3c2b923-bef0-47c1-8442-95c409d6983b
+    version: v0.0.1
+spec:
+  selector:
+    matchLabels:
+      app: rs234335
+  template:
+    metadata:
+      labels:
+        app: rs234335

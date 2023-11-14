@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: rs234335
+    applicationId: app_c3c2b923-bef0-47c1-8442-95c409d6983b
+    version: v0.0.1
+  name: rs234335
+spec:
+  selector:
+    app: rs234335
