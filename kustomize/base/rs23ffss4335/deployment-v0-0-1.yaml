@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rs23ffss4335
+  labels:
+    app: rs23ffss4335
+    applicationId: app_caffabe5-1f03-4540-9262-d5d625ab2a0a
+    version: v0.0.1
+spec:
+  selector:
+    matchLabels:
+      app: rs23ffss4335
+  template:
+    metadata:
+      labels:
+        app: rs23ffss4335

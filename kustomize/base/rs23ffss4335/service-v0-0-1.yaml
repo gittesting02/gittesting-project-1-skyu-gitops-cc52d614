@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: rs23ffss4335
+    applicationId: app_caffabe5-1f03-4540-9262-d5d625ab2a0a
+    version: v0.0.1
+  name: rs23ffss4335
+spec:
+  selector:
+    app: rs23ffss4335
